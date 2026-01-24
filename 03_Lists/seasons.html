@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seasons</title>
+    <style>
+        ol{
+            font-weight: bold;
+        }
+        ul{
+            font-weight: normal;
+        }
+        #winter{
+            color: rgb(0, 187, 255);
+        }
+        #spring{
+            color: rgb(47, 255, 82);
+        }
+         #summer{
+            color: rgb(255, 47, 99);
+        }
+        #autumn{
+            color: yellow;
+        }
+        #winter li{
+            list-style-image: url(./markers/snow.png);
+        }
+         #spring li{
+            list-style-image: url(./markers/leaf.png);
+        }
+         #summer li{
+            list-style-image: url(./markers/sun.png);
+        }
+         #autumn li{
+            list-style-image: url(./markers/rain.png);
+        }
+        /* ol li{
+            list-style-image: url(./markers/arr.gif);
+        } */
+         ol{
+            list-style-type: none;
+            counter-reset: num;
+         }
+       ol>li::before{
+        /* content: ' < ';
+        color: white; */
+        content: counter(num) ') ';
+        counter-increment: num;
+        }
+    </style>
+</head>
+<body>
+    <h2>Seasons</h2>
+    <ol>
+        <li id="winter">Winter
+            <ul>
+                <li>December</li>
+                <li>January</li>
+                <li>Febriary</li>
+            </ul>
+        </li>
+        <li id="spring">Spring
+             <ul>
+                <li>March</li>
+                <li>April</li>
+                <li>May</li>
+            </ul>
+        </li>
+        <li id="summer">Summer
+             <ul>
+                <li>June</li>
+                <li>July</li>
+                <li>August</li>
+            </ul>
+        </li>
+        <li id="autumn">Autumn
+             <ul>
+                <li>September</li>
+                <li>November</li>
+                <li>October</li>
+            </ul>
+        </li>
+    </ol>
+    
+</body>
+</html>

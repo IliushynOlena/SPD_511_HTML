@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table{
+            border: 1px solid black;
+             /* border-collapse: collapse;  */
+             border-collapse: separate; 
+             border-spacing: 10px;
+             background-color: bisque;
+             background-image: url(./module_5_/bg_1.jpg);
+            empty-cells: hide;
+            }
+        tr{
+            background-color: rgb(191, 251, 251);
+            background-image: url(./module_5_/bg_2.jpg);
+        }
+        th{
+            border: 1px solid red;
+        }
+         td{
+            border: 1px solid blue;
+        }
+        #uniq{
+            width: 30vw;
+            height: 20vh;
+            /*horizontal*/
+            text-align:center;
+            /*vertical */
+            vertical-align: middle;
+            background-color: rgb(113, 227, 81);
+            background-image: url(./module_5_/bg_3.jpg);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <!-- tr - table row -->
+        <tr>
+            <!-- th - table head -->
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+            <th>Column 4</th>
+        </tr>
+        <tr>
+            <!-- td - table data -->
+            <td>Lorem ipsum grtre</td>
+            <td id="uniq">Lorem ipsum</td>
+            <td>Lorem ipsum</td>
+            <td>Lorem ipsum</td>
+        </tr>
+        <tr>
+            <!-- td - table data -->
+            <td>Lorem ipsum</td>
+            <td>Lorem ipsum</td>
+            <td>Lorem ipsum</td>
+            <td></td>
+        </tr>
+        <tr>
+            <!-- td - table data -->
+            <td>Lorem ipsum</td>
+            <td>Lorem ipsum</td>
+            <td>Lorem ipsum</td>
+            <td></td>
+        </tr>
+
+    </table>
+    
+</body>
+</html>
